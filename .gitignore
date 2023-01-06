@@ -1,1 +1,8 @@
-venv
+venv/
+app_ecole\__pycache__/
+app_ecole/migrations/__pycache__/
+app_ecole/models/__pycache__/
+ecole/__pycache__/
+app_ecole/views/__pycache__/
+__pycache__
+
