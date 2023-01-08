@@ -1,7 +1,9 @@
 from django.db import models
+from app_ecole.models import Client
 
 
 class Commande(models.Model):
+    client = models.ForeignKey(Client, on_delete = models.CASCADE)
     CodeCommande = models.IntegerField()
     MontantTotal = models.FloatField()
     DateCommande = models.DateField()
