@@ -3,7 +3,7 @@ from app_ecole.models import Client
 
 
 class Commande(models.Model):
-    client = models.ForeignKey(Client, on_delete = models.CASCADE)
+    client = models.ForeignKey(Client, on_delete = models.CASCADE, default=1)
     CodeCommande = models.IntegerField()
     MontantTotal = models.FloatField()
     DateCommande = models.DateField()
