@@ -14,3 +14,6 @@ class Client(models.Model):
     def __str__(self):
 
         return self.NomClient
+
+    class Meta:
+        db_table = 'app_ecole_client'
