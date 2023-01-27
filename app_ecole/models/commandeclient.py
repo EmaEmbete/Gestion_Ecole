@@ -9,5 +9,5 @@ class CommandeClient(models.Model):
     DateCommande = models.DateField()
     EtatCommande = models.CharField(max_length = 10)
 
-    def __int__(self):
+    def __str__(self):
         return self.CodeCommande
