@@ -7,6 +7,7 @@ class DetailCommande(models.Model):
     commandeclient = models.ForeignKey(CommandeClient, on_delete = models.CASCADE)
     QnteDemande = models.IntegerField()
     PrixUnit = models.IntegerField()
+    Montant = models.IntegerField()
     NbreJour = models.IntegerField()
     DateDebut = models.DateField()
 
